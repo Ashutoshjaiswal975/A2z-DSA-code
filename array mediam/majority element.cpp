@@ -19,10 +19,10 @@ Output: 2
 
 class Solution {
 public:
-    int majorityElement(vector<int>& nums) {
+    int majorityElement(vector<int>& arr) {
         int candidate = 0, count = 0;
 
-        for (int num : nums) {
+        for (int num : arr) {
             if (count == 0) {
                 candidate = num; // Set a new candidate
             }
